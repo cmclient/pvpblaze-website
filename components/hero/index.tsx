@@ -1,0 +1,119 @@
+import { Button, Divider, Text, Popover, Image } from '@nextui-org/react';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+import React from 'react';
+import { Box } from '../styles/box';
+import { Flex } from '../styles/flex';
+
+export const Hero = () => {
+   const serverAddress = 'mc.pvpblaze.net';
+   const [copied, setCopied] = React.useState(false);
+
+   const handleCopy = () => {
+      setCopied(true);
+  
+      // Reset the copied state after 3 seconds
+      setTimeout(() => {
+        setCopied(false);
+      }, 3000);
+    };
+
+   return (
+      <>
+         <Flex
+            css={{
+               'gap': '$3',
+               'px': '$6',
+               'flexDirection': 'column',
+               'alignContent': 'center',
+               'justifyContent': 'center',
+               'alignItems': 'center',
+               'width': '100%',
+               '@sm': {
+                  flexDirection: 'row',
+                  mt: '$20',
+               },
+            }}
+            justify={'center'}
+         >
+            <Box
+               css={{
+                  pt: '$13',
+
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '$5',
+               }}
+            >
+               <Box
+                  css={{
+                     maxWidth: '600px',
+                  }}
+               >
+                  <Text
+                     h1
+                     css={{
+                        display: 'inline',
+                     }}
+                     color="primary"
+                  >
+                     PVP
+                  </Text>
+                  <Text
+                     h1
+                     css={{
+                        display: 'inline',
+                     }}
+                  >
+                     BLAZE
+                  </Text>
+               </Box>
+
+               <Text
+                  css={{
+                     color: '$accents8',
+                     maxWidth: '400px',
+                  }}
+                  size={'$lg'}
+                  span
+               >
+                  PvPBlaze is made for you! Looking for a fun Minecraft server to enjoy with friends? Check ours out - you won&apos;t be disappointed!
+               </Text>
+
+               <Flex
+                  css={{
+                     gap: '$8',
+                     pt: '$4',
+                  }}
+                  wrap={'wrap'}
+               >
+                  <Popover>
+                     <Popover.Trigger>
+                        <Button>Join Now</Button>
+                     </Popover.Trigger>
+                     <Popover.Content>
+                        <CopyToClipboard text={serverAddress} onCopy={handleCopy}>
+                           <Text css={{ p: "$6", cursor: 'pointer' }}>
+                              {copied ? 'Copied to clipboard.' : serverAddress}
+                           </Text>
+                        </CopyToClipboard>
+                     </Popover.Content>
+                  </Popover>
+               </Flex>
+            </Box>
+            <Box
+               css={{
+                  '& img': {
+                     width: '775px',
+                     objectFit: 'contain',
+                  },
+               }}
+            >
+               <Image src='player.png' alt=''/>
+            </Box>
+         </Flex>
+         <Divider
+            css={{ position: 'absolute', inset: '0p', left: '0', mt: '$10' }}
+         />
+      </>
+   );
+};
