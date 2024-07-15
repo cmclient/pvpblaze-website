@@ -47,6 +47,7 @@ export const LeaderboardTable = () => {
 
   const renderCell = (user, columnKey) => {
     const cellValue = user[columnKey];
+    const group = user['group'];
     switch (columnKey) {
       case "name":
         const avatarUrl = `https://minotar.net/helm/${user.nickname}/64.png`;
@@ -69,7 +70,7 @@ export const LeaderboardTable = () => {
             </Row>
             <Row>
               <Text b size={13} css={{ tt: "capitalize", color: "$accents7" }}>
-                Members
+                {group}
               </Text>
             </Row>
           </Col>

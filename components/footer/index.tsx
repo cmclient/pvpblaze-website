@@ -4,6 +4,10 @@ import { AcmeLogo } from '../navbar/logo';
 import { Box } from '../styles/box';
 import { Flex } from '../styles/flex';
 import { DiscordIcon } from '../icons/DiscordIcon';
+import { YoutubeIcon } from '../icons/YoutubeIcon';
+import { TikTokIcon } from '../icons/TikTokIcon';
+import { ShopIcon } from '../icons/ShopIcon';
+import { InstagramIcon } from '../icons/InstagramIcon';
 
 export const Footer = () => {
    return (
@@ -68,30 +72,30 @@ export const Footer = () => {
                      <Link
                         color="inherit"
                         target="_blank"
-                        href="https://dc.pvpblaze.net"
+                        href="https://www.instagram.com/pvpblaze2024/"
                      >
-                        <DiscordIcon fill="currentColor" size={24} />
+                        <InstagramIcon />
                      </Link>
                      <Link
                         color="inherit"
                         target="_blank"
-                        href="https://dc.pvpblaze.net"
+                        href="https://www.youtube.com/channel/UC9XOBd7m8Nvf6Y_ift6cnXQ"
                      >
-                        <DiscordIcon fill="currentColor" size={24} />
+                        <YoutubeIcon />
                      </Link>
                      <Link
                         color="inherit"
                         target="_blank"
-                        href="https://dc.pvpblaze.net"
+                        href="https://www.tiktok.com/@cmclient.official?is_from_webapp=1&sender_device=pc"
                      >
-                        <DiscordIcon fill="currentColor" size={24} />
+                        <TikTokIcon />
                      </Link>
                      <Link
                         color="inherit"
                         target="_blank"
-                        href="https://dc.pvpblaze.net"
+                        href="https://pvpblaze.net/store"
                      >
-                        <DiscordIcon fill="currentColor" size={24} />
+                        <ShopIcon />
                      </Link>
                   </Flex>
                   <Flex
@@ -100,10 +104,10 @@ export const Footer = () => {
                      }}
                   >
                      <Text span css={{ color: '$accents8' }}>
-                        Terms of Service
+                        <Link href='static/tos.pdf'>Terms of Service</Link>
                      </Text>
                      <Text span css={{ color: '$accents8' }}>
-                        Privacy Policy
+                     <Link href='static/privacy.pdf'>Privacy Policy</Link>
                      </Text>
                   </Flex>
                   <Flex
@@ -112,7 +116,7 @@ export const Footer = () => {
                      }}
                   >
                      <Text span css={{ color: '$accents8' }}>
-                        © Copyright 2024 CMClient.
+                        © Copyright 2024 CMCLIENT.
                      </Text>
                   </Flex>
                </Flex>
