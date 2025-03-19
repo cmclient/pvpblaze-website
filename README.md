@@ -1,6 +1,6 @@
 # PvPBlaze Website
 
-A Next.js web app built with NextUI v1 for PvPBlaze, a Minecraft PvP server.
+A NextUI v1 web app made for PvPBlaze, a Minecraft server.
 
 ## Features
 
