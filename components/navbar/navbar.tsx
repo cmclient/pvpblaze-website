@@ -88,7 +88,7 @@ export const Nav = () => {
                      minWidth: '100%',
                   }}
                   target="_blank"
-                  href="https://dc.pvpblaze.net"
+                  href="https://discord.gg/jHpVJHTtWt"
                >
                   <GithubIcon />
                </Link>
@@ -121,7 +121,7 @@ export const Nav = () => {
             </Navbar.Item>
             <Navbar.Item>
                <Button auto flat>
-                  <Link href='store'>
+                  <Link href="https://pvpblaze.tebex.io/" target="_blank" rel="noopener noreferrer">
                      Store
                   </Link>
                </Button>
@@ -133,7 +133,7 @@ export const Nav = () => {
                      minWidth: '100%',
                   }}
                   target="_blank"
-                  href="https://dc.pvpblaze.net"
+                  href="https://discord.gg/jHpVJHTtWt"
                >
                   <DiscordIcon fill="currentColor" size={24} />
                </Link>

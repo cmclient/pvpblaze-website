@@ -1,8 +1,9 @@
-import { Button, Divider, Text, Popover, Image } from '@nextui-org/react';
+import { Button, Link, Divider, Text, Popover, Image } from '@nextui-org/react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import React from 'react';
 import { Box } from '../styles/box';
 import { Flex } from '../styles/flex';
+import { DiscordIcon } from '../icons/DiscordIcon';
 
 export const Hero = () => {
    const serverAddress = 'mc.pvpblaze.net';
@@ -10,12 +11,12 @@ export const Hero = () => {
 
    const handleCopy = () => {
       setCopied(true);
-  
+
       // Reset the copied state after 3 seconds
       setTimeout(() => {
-        setCopied(false);
+         setCopied(false);
       }, 3000);
-    };
+   };
 
    return (
       <>
@@ -54,7 +55,7 @@ export const Hero = () => {
                      css={{
                         display: 'inline',
                      }}
-                     color="primary"
+                     color="white"
                   >
                      PVP
                   </Text>
@@ -63,8 +64,18 @@ export const Hero = () => {
                      css={{
                         display: 'inline',
                      }}
+                     color="#F5A524"
                   >
-                     BLAZE
+                     Blaze
+                  </Text>
+                  <Text
+                     h1
+                     css={{
+                        display: 'inline',
+                     }}
+                     color="white"
+                  >
+                     .NET
                   </Text>
                </Box>
 
@@ -81,14 +92,15 @@ export const Hero = () => {
 
                <Flex
                   css={{
-                     gap: '$8',
+                     gap: '$4', // Reduced gap for better alignment
                      pt: '$4',
+                     flexWrap: 'nowrap', // Ensures they stay in one line
+                     alignItems: 'center', // Aligns items properly
                   }}
-                  wrap={'wrap'}
                >
                   <Popover>
                      <Popover.Trigger>
-                        <Button>Join Now</Button>
+                        <Button auto>Join Now</Button>
                      </Popover.Trigger>
                      <Popover.Content>
                         <CopyToClipboard text={serverAddress} onCopy={handleCopy}>
@@ -98,6 +110,22 @@ export const Hero = () => {
                         </CopyToClipboard>
                      </Popover.Content>
                   </Popover>
+
+                  <Button auto flat as={Link} href="https://pvpblaze.tebex.io/" target="_blank" rel="noopener noreferrer">
+                     Store
+                  </Button>
+
+                  {/* <Button auto animated bordered as={Link} href="https://pvpblaze.tebex.io/" target="_blank" rel="noopener noreferrer">
+                     <DiscordIcon fill="currentColor" size={24} />
+                  </Button> */}
+
+                  <Link
+                     color="inherit"
+                     target="_blank"
+                     href="https://discord.gg/jHpVJHTtWt"
+                  >
+                     <DiscordIcon fill="currentColor" size={24} />
+                  </Link>
                </Flex>
             </Box>
             <Box
@@ -108,7 +136,7 @@ export const Hero = () => {
                   },
                }}
             >
-               <Image src='player.png' alt=''/>
+               <Image src='player.png' alt='' />
             </Box>
          </Flex>
          <Divider

@@ -22,7 +22,7 @@ function MyApp({Component, pageProps}: AppProps) {
    return (
       <>
       <Head>
-         <title>PVPBLAZE | Minecraft Server</title>
+         <title>PVPBLAZE.NET Minecraft Server</title>
       </Head>
       <NextThemesProvider
          defaultTheme="system"

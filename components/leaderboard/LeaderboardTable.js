@@ -31,6 +31,7 @@ export const LeaderboardTable = () => {
 
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);
+    setCurrentPage(1);
   };
 
   const columns = [
@@ -47,7 +48,6 @@ export const LeaderboardTable = () => {
 
   const renderCell = (user, columnKey) => {
     const cellValue = user[columnKey];
-    const group = user['group'];
     switch (columnKey) {
       case "name":
         const avatarUrl = `https://minotar.net/helm/${user.nickname}/64.png`;
@@ -70,7 +70,7 @@ export const LeaderboardTable = () => {
             </Row>
             <Row>
               <Text b size={13} css={{ tt: "capitalize", color: "$accents7" }}>
-                {group}
+                {user.group}
               </Text>
             </Row>
           </Col>

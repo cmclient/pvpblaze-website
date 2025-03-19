@@ -4,10 +4,8 @@ import { AcmeLogo } from '../navbar/logo';
 import { Box } from '../styles/box';
 import { Flex } from '../styles/flex';
 import { DiscordIcon } from '../icons/DiscordIcon';
-import { YoutubeIcon } from '../icons/YoutubeIcon';
-import { TikTokIcon } from '../icons/TikTokIcon';
-import { ShopIcon } from '../icons/ShopIcon';
-import { InstagramIcon } from '../icons/InstagramIcon';
+import { YouTubeIcon } from '../icons/YouTubeIcon';
+import { TiktokIcon } from '../icons/TiktokIcon';
 
 export const Footer = () => {
    return (
@@ -23,7 +21,7 @@ export const Footer = () => {
             </Flex>
             <Flex justify={'center'}>
                <Text span css={{ color: '$accents8' }}>
-                  The PVPBlaze.net server is not associated with Mojang Studios in any way.
+                  The PVPBLAZE.NET server is not associated with Mojang Studios in any way.
                   Income from the store is transferred to the service owner to maintain the server.
                </Text>
             </Flex>
@@ -65,37 +63,23 @@ export const Footer = () => {
                      <Link
                         color="inherit"
                         target="_blank"
-                        href="https://dc.pvpblaze.net"
+                        href="https://discord.gg/jHpVJHTtWt"
                      >
                         <DiscordIcon fill="currentColor" size={24} />
                      </Link>
                      <Link
                         color="inherit"
                         target="_blank"
-                        href="https://www.instagram.com/pvpblaze2024/"
-                     >
-                        <InstagramIcon />
-                     </Link>
-                     <Link
-                        color="inherit"
-                        target="_blank"
                         href="https://www.youtube.com/channel/UC9XOBd7m8Nvf6Y_ift6cnXQ"
                      >
-                        <YoutubeIcon />
+                        <YouTubeIcon fill="currentColor" size={24} />
                      </Link>
                      <Link
                         color="inherit"
                         target="_blank"
                         href="https://www.tiktok.com/@cmclient.official?is_from_webapp=1&sender_device=pc"
                      >
-                        <TikTokIcon />
-                     </Link>
-                     <Link
-                        color="inherit"
-                        target="_blank"
-                        href="https://pvpblaze.net/store"
-                     >
-                        <ShopIcon />
+                        <TiktokIcon fill="currentColor" size={24} />
                      </Link>
                   </Flex>
                   <Flex
@@ -104,10 +88,10 @@ export const Footer = () => {
                      }}
                   >
                      <Text span css={{ color: '$accents8' }}>
-                        <Link href='static/tos.pdf'>Terms of Service</Link>
+                        Terms of Service
                      </Text>
                      <Text span css={{ color: '$accents8' }}>
-                     <Link href='static/privacy.pdf'>Privacy Policy</Link>
+                        Privacy Policy
                      </Text>
                   </Flex>
                   <Flex
@@ -116,7 +100,7 @@ export const Footer = () => {
                      }}
                   >
                      <Text span css={{ color: '$accents8' }}>
-                        © Copyright 2024 CMCLIENT.
+                        © Copyright 2025 PvPBlaze.
                      </Text>
                   </Flex>
                </Flex>

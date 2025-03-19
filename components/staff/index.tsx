@@ -26,9 +26,9 @@ export const Staff: React.FC<{ id: string }> = ({ id }) => {
           wrap={'wrap'}
           justify={'center'}
         >
-          <Member nickname='_Mervik' discord='@merv1k' rank='Founder' color='error'/>
-          <Member nickname='VeryGlodPlayer' discord='@rzeznikzblaviken.' rank='Owner' color='error'/>
-          <Member nickname='Czarny_Kot' discord='@czarny_k0t' rank='vOwner' color='primary'/>
+          <Member nickname='Merv1k' discord='@merv1k' rank='Founder' color='error'/>
+          <Member nickname='VeryGlodPlayer' discord='@rzeznikzblaviken.' rank='Owner' color='warning'/>
+          <Member nickname='presidental_og' discord='@kuezese' rank='vOwner' color='success'/>
         </Flex>
       </Flex>
 
