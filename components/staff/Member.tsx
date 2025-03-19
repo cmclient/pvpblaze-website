@@ -21,7 +21,7 @@ export const Member = ({
 
     return (
         <Card css={{ p: '$6', mw: '300px', alignItems: 'center', alignContent: 'center', justifyContent: 'center' }}>
-            <Card.Body css={{ py: '$4' }}>
+            <Card.Body>
                 <Avatar
                     css={{ size: "$40" }}
                     src={avatarUrl}

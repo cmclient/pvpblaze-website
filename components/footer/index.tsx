@@ -1,11 +1,9 @@
+import { Icon } from "@iconify/react/dist/iconify.js";
 import { Divider, Text, Link } from '@nextui-org/react';
 import React from 'react';
 import { AcmeLogo } from '../navbar/logo';
 import { Box } from '../styles/box';
 import { Flex } from '../styles/flex';
-import { DiscordIcon } from '../icons/DiscordIcon';
-import { YouTubeIcon } from '../icons/YouTubeIcon';
-import { TiktokIcon } from '../icons/TiktokIcon';
 
 export const Footer = () => {
    return (
@@ -63,23 +61,37 @@ export const Footer = () => {
                      <Link
                         color="inherit"
                         target="_blank"
+                        href="https://pvpblaze.tebex.io"
+                     >
+                        <Icon icon="mingcute:shopping-cart-1-fill" fontSize={24} />
+                     </Link>
+                     <Link
+                        color="inherit"
+                        target="_blank"
                         href="https://discord.gg/jHpVJHTtWt"
                      >
-                        <DiscordIcon fill="currentColor" size={24} />
+                        <Icon icon="mingcute:discord-fill" fontSize={24} />
                      </Link>
                      <Link
                         color="inherit"
                         target="_blank"
                         href="https://www.youtube.com/channel/UC9XOBd7m8Nvf6Y_ift6cnXQ"
                      >
-                        <YouTubeIcon fill="currentColor" size={24} />
+                        <Icon icon="mingcute:youtube-fill" fontSize={24} />
                      </Link>
                      <Link
                         color="inherit"
                         target="_blank"
-                        href="https://www.tiktok.com/@cmclient.official?is_from_webapp=1&sender_device=pc"
+                        href="https://www.tiktok.com/@cmclient.official"
                      >
-                        <TiktokIcon fill="currentColor" size={24} />
+                        <Icon icon="mingcute:tiktok-fill" fontSize={24} />
+                     </Link>
+                     <Link
+                        color="inherit"
+                        target="_blank"
+                        href="https://github.com/cmclient"
+                     >
+                        <Icon icon="mingcute:github-fill" fontSize={24} />
                      </Link>
                   </Flex>
                   <Flex
