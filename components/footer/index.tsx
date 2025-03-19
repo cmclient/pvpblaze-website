@@ -87,12 +87,12 @@ export const Footer = () => {
                         gap: '$6',
                      }}
                   >
-                     <Text span css={{ color: '$accents8' }}>
+                     <Link href="https://pvpblaze.tebex.io/terms/checkout" css={{ color: '$accents8' }}>
                         Terms of Service
-                     </Text>
-                     <Text span css={{ color: '$accents8' }}>
+                     </Link>
+                     <Link href="https://pvpblaze.tebex.io/terms/privacy" css={{ color: '$accents8' }}>
                         Privacy Policy
-                     </Text>
+                     </Link>
                   </Flex>
                   <Flex
                      css={{
@@ -100,7 +100,7 @@ export const Footer = () => {
                      }}
                   >
                      <Text span css={{ color: '$accents8' }}>
-                        © Copyright 2025 PvPBlaze.
+                        © Copyright 2025 <Link href="https://github.com/cmclient">CMCLIENT</Link>.
                      </Text>
                   </Flex>
                </Flex>

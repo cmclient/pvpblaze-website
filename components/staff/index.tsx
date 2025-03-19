@@ -28,7 +28,6 @@ export const Staff: React.FC<{ id: string }> = ({ id }) => {
         >
           <Member nickname='Merv1k' discord='@merv1k' rank='Founder' color='error'/>
           <Member nickname='VeryGlodPlayer' discord='@rzeznikzblaviken.' rank='Owner' color='warning'/>
-          <Member nickname='presidental_og' discord='@kuezese' rank='vOwner' color='success'/>
         </Flex>
       </Flex>
 

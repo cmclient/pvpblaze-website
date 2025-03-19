@@ -1,49 +1,19 @@
-# NextJS and NextUI Landing Page Template
+# PVPBlaze
 
-You can deploy here directly to vercel [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/Siumauricio/landing-template-nextui)
+A simple websaite made for Minecraft server made with NextUI v1.
 
-This is a template for NextJS and NextUI. 
+## Live Demo
+[Click here](https://pvpblaze.net)
 
-[NextJS](https://nextjs.org/) 
-[NextUI](https://nextui.org/)
+## Getting Started
 
-You can see the demo here: https://landing-template-nextui.vercel.app/
-For improve this template, you can create a pull request or open an issue here [Issues](https://github.com/Siumauricio/landing-template-nextui/issues) or [Pull Request](
-    https://github.com/Siumauricio/landing-template-nextui/pulls)
-
-### Dark Mode
-![Landing Page Dark Mode](./public/Screenshot_2.png)
-
-### Light Mode
-![Landing Page Light Mode](./public/Screenshot_3.png)
-
-- Hero Section
-- Features Section 1
-- Features Section 2
-- Features Section 3
-- Testimonials Section
-- CTA Section
-- Pricing Section
-- FAQ Section
-- Footer Section
-- Dark Mode Support
-- Full Responsive
-
-## For Run
-
-Install dependencies
-
-    
 ```bash
+git clone https://github.com/cmclient/pvpblaze-website
+cd pvpblaze-website
 npm install
-```
-
-Start the server
-
-    
-        
-```bash
 npm run dev
 ```
 
-Now you can visit https://localhost:3000 in your browser.
+## License
+Licensed under the [MIT license](LICENSE).
+

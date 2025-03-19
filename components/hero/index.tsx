@@ -12,7 +12,6 @@ export const Hero = () => {
    const handleCopy = () => {
       setCopied(true);
 
-      // Reset the copied state after 3 seconds
       setTimeout(() => {
          setCopied(false);
       }, 3000);
@@ -92,10 +91,10 @@ export const Hero = () => {
 
                <Flex
                   css={{
-                     gap: '$4', // Reduced gap for better alignment
+                     gap: '$4',
                      pt: '$4',
-                     flexWrap: 'nowrap', // Ensures they stay in one line
-                     alignItems: 'center', // Aligns items properly
+                     flexWrap: 'nowrap',
+                     alignItems: 'center',
                   }}
                >
                   <Popover>
